@@ -3,7 +3,7 @@
 FROM ruby:2.5-alpine
 
 # Install packages
-RUN apk --no-cache add bash curl git tini
+RUN apk --no-cache add bash curl git tini openssh-client
 
 # Install R10K
 RUN gem install r10k --no-ri --no-rdoc
