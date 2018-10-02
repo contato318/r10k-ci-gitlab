@@ -64,7 +64,6 @@ make_ssh_config(){
   mkdir /root/.ssh || true
   echo "Host $HOST_GIT
       StrictHostKeyChecking no
-      UserKnownHostsFile=/dev/null
       IdentityFile /root/.ssh/private.$HOST_GIT" > /root/.ssh/config
   chmod 600 -R /root/.ssh
 }
