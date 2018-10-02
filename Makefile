@@ -75,7 +75,7 @@ test-all: limpa_tela ## Tests (all)
 test-docker:  ## Docker tests
 	@echo ""
 	@$(call msg_warn,"Docker basic...")
-	@sleep 1; docker run --name teste-list-docker-$(CONTEXTO) --rm -it  $(CONTEXTO) && \
+	@sleep 1; docker run --name teste-list-docker-$(CONTEXTO) --rm -it  $(CONTEXTO) | grep 10k && \
 	  echo -e "\t$(GREEN_COLOR)List containers = OK $(NO_COLOR) " || \
 		echo -e "\t$(RED_COLOR)List containers = NOK $(NO_COLOR) "
 
