@@ -107,7 +107,7 @@ run_cron(){
 }
 
 make_ssh_config(){
-  mkdir /root/.ssh
+  #mkdir /root/.ssh
   echo "Host $HOST_GIT
       StrictHostKeyChecking no
       UserKnownHostsFile=/dev/null
