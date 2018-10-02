@@ -45,8 +45,8 @@ limpa_tela:
 	@clear
 
 .PHONY: exec_bash_env
-exec_bash_env: ## Run bash (container) simulate .env
-	docker run -it --rm --env-file $(CURRENT_DIR)/.env $(CONTEXTO) bash
+exec_puppetfile_install_env: ## Run bash (container) simulate .env
+	docker run -it --rm -v $(CURRENT_DIR)/Puppetfile:/Puppetfile -v $(CURRENT_DIR)/CACHE/:/var/cache/r10k --env-file $(CURRENT_DIR)/.env $(CONTEXTO) puppetfile install -v debug
 
 .PHONY: exec_bash
 exec_bash: ## Run bash (container)

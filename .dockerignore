@@ -2,3 +2,8 @@ Makefile
 .version
 .git
 .config-runner*
+Puppetfile
+Puppetfile*
+CACHE
+CACHE*
+CACHE/*
