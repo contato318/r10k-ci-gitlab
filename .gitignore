@@ -3,6 +3,9 @@ Puppetfile*
 CACHE
 CACHE*
 CACHE/*
+modules
+modules*
+modules/*
 config-runner*
 config-runner/*
 *.*~

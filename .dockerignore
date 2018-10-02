@@ -7,3 +7,6 @@ Puppetfile*
 CACHE
 CACHE*
 CACHE/*
+modules
+modules*
+modules/*
