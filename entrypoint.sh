@@ -141,6 +141,8 @@ main(){
       make_ssh_public_key
   fi
 
+  generate_configuration
+
 
   #if [[ -n ${*:-} ]] ; then
   #  generate_configuration
